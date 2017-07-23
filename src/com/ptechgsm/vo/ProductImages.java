@@ -2,7 +2,7 @@ package com.ptechgsm.vo;
 
 public class ProductImages {
 	
-	/*this is class related to getting image 
+	/*  this is class related to getting image 
 	 * 
 	 * 
 	 * */
