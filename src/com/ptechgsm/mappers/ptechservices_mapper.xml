@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ptechgsm.mappers.PtechServiceInterf">
+    
+    <select id="getAllProductList" resultType="com.ptechgsm.vo.Product_List">
+        SELECT product_id,product_image,product_name, isuniq, last_inserted_date, last_update_date, isActive 
+        FROM product_list WHERE isActive=1
+    </select> <!-- getting all the active product list -->
+    
+    <select id="getUniqProductname" resultType="com.ptechgsm.vo.Product_List">
+        SELECT product_id,product_image,product_name, isuniq, last_inserted_date, last_update_date, isActive 
+        FROM product_list WHERE isActive=1 and isuniq=1
+    </select> <!-- getting uniq product list -->
+    
+    <select id="getProductDetails" resultType="com.ptechgsm.vo.ProductDetails.java">
+        
+        
+    </select>
+    
+    
+</mapper>
